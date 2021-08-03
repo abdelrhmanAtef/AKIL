@@ -1,0 +1,96 @@
+.product{
+    margin: 50px;
+    .active-li{
+        border-bottom: 2px solid $mainColor;
+       
+    }
+    .list-food{
+        margin:50px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin-left: 40px;
+            color: $mainColor;
+            cursor: pointer;
+            padding-bottom: 2px;
+            transition: 0.5s ease;
+
+        }
+    }
+    .owl-img{
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover .over{
+            bottom: 5px;
+        }
+        .over{
+            position: absolute;
+            bottom:-63px;
+            left: 50%;
+            width: 70%;
+            transform: translateX(-50%);
+            transition: 0.5s ease;
+           
+            .prod-ul{
+                display: flex;
+                align-content: center;
+               align-items: center;
+                justify-content: space-around; 
+                background-color: #fff;
+                padding: 10px;
+               cursor: pointer;
+            
+               li a{
+                   color: $grayColor;
+                   transition: 0.5s ease;
+                   &:hover{
+                       color: $mainColor;
+                   }
+               }
+            }
+        }
+    }
+    .item{
+        h5{
+            font-size: 18px;
+            color: $grayColor;
+            margin-top: 10px;
+        }
+        p{
+            letter-spacing: 2px;
+            color: $grayColor;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .star{
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            li{
+                padding:0 5px;
+                color: $grayColor;
+                margin: 0;
+            }
+        }
+        .price{
+            display: flex;
+            justify-content: center;
+            div{
+                padding:0 10px;
+                margin-bottom: 20px;
+                &:nth-of-type(1){
+                    color: $secondColor;
+                }
+                &:nth-of-type(2){
+                    color: $grayColor;
+                    text-decoration:line-through;
+                }
+            }
+        }
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+}

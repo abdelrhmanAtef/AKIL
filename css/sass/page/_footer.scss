@@ -1,0 +1,147 @@
+/*foooter*/
+footer {
+    width: 100%;
+    background: #000;
+    padding-top: 20px;
+    color: #fff;
+    height: auto;
+    padding-top: 40px;
+    h5{
+        color: $mainColor;
+        margin-bottom: 20px;
+    }
+  span {
+        width: 200px;
+        height: 5px;
+        background: $mainColor;
+        display: inline-block;
+        margin-bottom: 5px;
+        border-radius: 3px;
+    }
+    .form-group {
+        position: relative;
+        margin-top: 30px;
+    }
+    input[type="email"] {
+        margin: auto;
+        border-radius: 0;
+        width: 50%;
+    
+    }
+    .btn {
+        position: absolute;
+        right: 270px;
+        border-radius: 0;
+        background: $mainColor;
+        width: 200px;
+        border: 0;
+        outline: none;
+        padding: 7px;
+        &:hover {
+            background: $greenColor;
+        }
+    }
+    hr {
+        width: 100%;
+        background: #a5a5a5;
+        height: 1px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 40px
+    }
+    a {
+        margin-bottom: 10px
+    }
+    h5 {
+        margin-bottom: 20px
+    }
+    li{
+        width: 100%;
+    }
+    li, p {
+    color: $starColor;
+    font-size: 14px;
+}
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+li:hover {
+    color: $mainColor;
+    cursor: pointer
+}
+.navbar-brand {
+    color: $mainColor !important;
+}
+}
+
+
+footer .list li {
+    line-height: 3
+}
+
+footer .icon {
+    justify-content: flex-end;
+}
+
+footer .icon li {
+    margin-left: 40px
+}
+
+@media (max-width: 576px) {
+
+    footer input[type="email"] {
+        width: 80%
+    }
+
+    footer .btn {
+        right: 20px;
+        width: 100px
+    }
+
+    footer a h2 {
+        font-size: 13px
+    }
+
+    footer a img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    footer input[type="email"] {
+        width: 90%
+    }
+
+    footer .btn {
+        right: 20px;
+        width: 100px
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    footer input[type="email"] {
+        width: 70%
+    }
+
+    footer .btn {
+        right: 90px;
+        width: 100px
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    footer input[type="email"] {
+        width: 50%
+    }
+
+    footer .btn {
+        right: 200px;
+        width: 100px
+    }
+}
+
+/*foooter*/

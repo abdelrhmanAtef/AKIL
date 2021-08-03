@@ -1,0 +1,183 @@
+//  ------------------------------ nav bar ----------------------------
+.navbar{
+    padding: 5px 0;
+    @media (max-width:1024px) {
+        display: none;
+    }
+   .nav-link{
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.5s ease;
+        position: relative;
+       .num{
+         color: #fff;
+           position: absolute;
+           top: -5px;
+           left: 20px;
+           background-color: $mainColor;
+           border-radius: 50%;
+           padding: 4px;
+           font-size: 10px;
+           width: 20px;
+           height: 20px;
+           text-align: center;
+           line-height: 1;
+       }
+        &:hover{
+            color: $mainColor !important;
+        }
+    }
+}
+.navbar-brand{
+    position: relative;
+    
+    &::before{
+        content: "AKIRA";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        overflow: hidden;
+        letter-spacing: 7px;
+        font-size:35px !important;
+        font-weight: bold;
+        width:0;
+        transition: 0.5s ease;
+    }
+    &:hover::before{
+        width: 100%;
+        color: $secondColor;
+    }
+    font : {
+        size:35px !important;
+        weight: bold;
+    }
+    letter-spacing: 7px;
+    span{
+        color: $mainColor;
+    }
+}
+.second-nav{
+    @media (max-width:1024px) {
+        display: block;
+    }
+    @media (min-width:1024px) {
+        display: none;
+    }
+    .serch{
+        color: #000;
+        padding: 20px;
+        font-size: 20px;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    .nav-item{
+        .fa-user{
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    }
+    .togle{
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        overflow: hidden;
+        &:active{
+            border: none;
+        }
+    }
+}
+
+.overNav{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999999999999999;
+    .side{
+        height: 100vh;
+        background-color: #fff;
+        width: 30%;
+        padding: 20px;
+        @media (max-width:676px) {
+            width: 50%;
+        }
+        .heading{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            margin-bottom: 20px;
+            
+            h5{
+                color: $mainColor;
+            }
+            span{
+                transition: 0.5s;
+                perspective: 600px;
+                font: {
+                   size:18px;
+                   weight:bold;
+                }
+                   &:hover{
+                       transform: rotate(360deg);
+                   }
+                
+            }
+        }
+    }
+    .side-ul{
+        .nav-item{
+            border-top: 1px solid #000;
+            padding: 5px 0;
+            a{
+                padding: 10px 0;
+                color: #000;
+                transition: 0.5s;
+                &:hover{
+                    color: $mainColor
+                }
+        
+                }
+        }
+     
+    }
+    .social{
+        display: flex; 
+        justify-content: space-around; 
+        margin-top: 20px;
+        color: #fff !important;
+        li{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{color: #fff;}
+            &:nth-of-type(1){
+                background-color: #365493;
+            }
+            &:nth-of-type(2){
+                background-color: #3cf;
+            }
+
+            &:nth-of-type(3){
+                background-color: #774430;
+            }
+            &:nth-of-type(4){
+                background-color: #cb2027;
+            }
+            &:nth-of-type(4){
+                background-color: #cb2027;
+            }
+            &:nth-of-type(5){
+                background-color: #cb2027;
+            }
+        }
+    }
+}
+

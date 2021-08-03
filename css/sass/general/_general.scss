@@ -1,0 +1,37 @@
+//   /////////////////////heading of sections/////////////////////////
+.shar-head{
+ position: relative;
+ .share-img{
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: -99999;
+ }
+ .share{
+     h1{
+         font : {
+            size: 40px;
+            weight:bold;
+     }
+ }
+ p{
+     font-weight: bold;
+     letter-spacing: 1px;
+ }
+}
+}
+
+body{
+    font-family: 'cairo';
+   
+}
+body::-webkit-scrollbar{
+    width: 16px;
+}
+body::-webkit-scrollbar-track{
+    background-color: $grayColor;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $mainColor;
+    border-radius: 20px;
+}
