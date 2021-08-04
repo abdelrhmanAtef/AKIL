@@ -2,7 +2,8 @@ let close = $(".overNav").outerWidth(true);
 $(".close").click(function(){
     if( $(".overNav").css("left") == "0px"){
         $(".overNav").animate({"left":-close},1000);
-        $(".overNav").fadeOut()
+        $(".overNav").fadeOut();
+        $('body').css({overflow: 'auto'});
     }else{
         $(".overNav").animate({"left":"0px"},1000)
     }
@@ -10,7 +11,8 @@ $(".close").click(function(){
 });
 $(".togle").click(function(){
     $(".overNav").fadeIn();
-    $(".overNav").animate({"left":"0px"},500)
+    $(".overNav").animate({"left":"0px"},500);
+    $('body').css({overflow: 'hidden'});
 });
 
 //////////////////////////////////////// slider resize /////////////////////////////////////// 
